@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    width: 425px;
+    border-radius: 3px;
+
+}
+
+.wrapper .tab_wrap{
+     padding: 25px;
+}
+
+.wrapper .tab_wrap ul{
+        display: flex;
+        background: #f4fafe;
+        border-radius: 3px;
+}
+
+.wrapper .tab_wrap ul li{
+    width: 125px;
+    padding: 10px;
+    text-align: center;
+    cursor:pointer;
+    border-radius: 3px;
+
+}
+
+.wrapper .tab_wrap ul li:hover,
+.wrapper .tab_wrap ul li.active{
+    background: #e4edf5;
+    
+}
+
+.inbox{
+    height: 632px;
+}
+
+.inbox li .all{
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #e4edf5;
+    cursor:pointer;
+
+}
+
+.inbox li:last-child .all{
+    border-bottom: 0;
+}
+
+.inbox li .all:hover{
+    background: #e4edf5;
+}
+
+body{
+    color: #4d5465;
+    background: #0058ff;
+}
+
+.inbox li .all img{
+    width: 50px;
+    height: 50px;
+}
+
+
+.inbox li .all li-right{
+    display: flex;
+}
+
+.inbox .li-right .message{
+    margin:0 20px;    
+}
+
+.inbox .li-right .message .title{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.inbox .li-right .message .sub_title{
+    font-size: 12px;
+    line-height: 18px;
+    
+}
+
+.inbox .all .time{
+    color: #ccc;
+    font-size: 12px;
+    text-align: left;
+}
